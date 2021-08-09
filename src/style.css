@@ -1,9 +1,9 @@
 body {
-  color: blueviolet;
+  background-color: blueviolet;
 }
 
 container {
-  color: cornsilk;
+  background-color: cornsilk;
   width: 50%;
   height: 50%;
   border-radius: 10px;
