@@ -1,0 +1,10 @@
+body {
+  color: blueviolet;
+}
+
+container {
+  color: cornsilk;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
