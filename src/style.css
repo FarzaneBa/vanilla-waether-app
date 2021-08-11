@@ -30,10 +30,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 .temp {
   color: #7296d3;
   font-size: 35px;
