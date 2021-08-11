@@ -17,63 +17,61 @@
   <body>
     <!-- bootstrap container start-->
     <div class="container">
-      <div class="weather">
-        <!-- search box start  -->
-        <div class="form">
-          <form class="row g-1 mt-3">
-            <div class="col-auto">
-              <input
-                id="city"
-                type="text"
-                class="form-control"
-                placeholder="Enter a city"
-              />
-            </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3" id="submitBtn">
-                submit
-              </button>
-            </div>
-          </form>
-        </div>
-        <!-- search box end -->
-        <!-- Weather and city start -->
-        <div class="weather-and-city">
-          <img
-            class=""
-            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            alt=""
-          />
-          <h1 class="text-center" id="city-name">Tehran</h1>
-          <p class="text-center" id="description"></p>
-          <p id="time" class="text-center">22:00 friday</p>
-        </div>
-        <!-- Weather and city end -->
-        <!-- description start -->
-        <div class="row text-center mt-3">
-          <div class="col-4 mt-3">
-            <p class="text-center">humidity</p>
-            <p id="humidity">35</p>
+      <!-- search box start  -->
+      <div class="form">
+        <form class="row g-1 mt-3">
+          <div class="col-auto">
+            <input
+              id="city"
+              type="text"
+              class="form-control"
+              placeholder="Enter a city"
+            />
           </div>
-          <div class="col-4 mt-3">
-            <p>Temperature</p>
-            <p class="text-center">
-              <span class="temp">37</span><span class="unit">°C |°F</span>
-            </p>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3" id="submitBtn">
+              submit
+            </button>
           </div>
-          <div class="col-4 mt-3">
-            <p class="text-center">wind</p>
-            <p id="wind">2</p>
-          </div>
-        </div>
-        <!-- description end -->
+        </form>
       </div>
-      <p>
-        This project was coded by Farzane and is open-sourced on
-        <a href="https://github.com/farzaneb75/vanilla-waether-app">GitHub</a>
-      </p>
+      <!-- search box end -->
+      <!-- Weather and city start -->
+      <div class="weather-and-city">
+        <img
+          class=""
+          src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+          alt=""
+        />
+        <h1 class="text-center" id="city-name">Tehran</h1>
+        <p class="text-center" id="description"></p>
+        <p id="time" class="text-center">22:00 friday</p>
+      </div>
+      <!-- Weather and city end -->
+      <!-- description start -->
+      <div class="row text-center mt-3">
+        <div class="col-4 mt-3">
+          <p class="text-center">humidity</p>
+          <p id="humidity">35</p>
+        </div>
+        <div class="col-4 mt-3">
+          <p>Temperature</p>
+          <p class="text-center">
+            <span class="temp">37</span><span class="unit">°C |°F</span>
+          </p>
+        </div>
+        <div class="col-4 mt-3">
+          <p class="text-center">wind</p>
+          <p id="wind">2</p>
+        </div>
+      </div>
+      <!-- description end -->
     </div>
 
+    <p class="text-center">
+      This project was coded by Farzane and is open-sourced on
+      <a href="https://github.com/farzaneb75/vanilla-waether-app">GitHub</a>
+    </p>
     <!-- bootstrap container end -->
     <script src="src/app.js"></script>
   </body>
