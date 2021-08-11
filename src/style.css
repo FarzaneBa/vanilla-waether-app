@@ -1,10 +1,35 @@
-body {
-  background-color: blueviolet;
+.container {
+  max-width: 600px;
+  border: 1px solid #dadde1;
+  margin-top: 50px;
+  border-radius: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
-container {
-  background-color: cornsilk;
-  width: 50%;
-  height: 50%;
-  border-radius: 10px;
+form {
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #7296d3;
+}
+
+p {
+  color: #b975a6;
+  font-size: 20px;
+}
+.temp {
+  color: #7296d3;
+  font-size: 35px;
+}
+
+.unit {
+  color: blue;
+  font-size: 20px;
 }
