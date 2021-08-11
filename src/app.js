@@ -64,15 +64,14 @@ submitCity.addEventListener("submit", handleclick);
 
 //unit conversion
 
-function showFahenhite(){
- let displayTemp = document.querySelector(".temp");
- displayTemp.innerHTML = 
-
+function showCelsius() {
+  let displayTemp = document.querySelector(".temp");
+  displayTemp.innerHTML = showCelsuis;
 }
 
-function showCelsius (){
-   let displayTemp = document.querySelector(".temp");
-   displayTemp.innerHTML = (showCelsuis * 9.5) + 32 ;
+function showFahenhite() {
+  let displayTemp = document.querySelector(".temp");
+  displayTemp.innerHTML = showCelsuis * 9.5 + 32;
 }
 let celsius = document.querySelector("#cel");
 let fahrenhite = document.querySelector("#fa");
