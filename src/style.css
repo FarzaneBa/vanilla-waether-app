@@ -25,6 +25,10 @@ p {
   color: #b975a6;
   font-size: 20px;
 }
+
+a {
+  text-decoration: none;
+}
 .temp {
   color: #7296d3;
   font-size: 35px;

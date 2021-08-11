@@ -64,5 +64,18 @@ submitCity.addEventListener("submit", handleclick);
 
 //unit conversion
 
-let celsius = document.querySelector(".temp");
-let fahrenhite = document.querySelector(".unit");
+function showFahenhite(){
+ let displayTemp = document.querySelector(".temp");
+ displayTemp.innerHTML = 
+
+}
+
+function showCelsius (){
+   let displayTemp = document.querySelector(".temp");
+   displayTemp.innerHTML = (showCelsuis * 9.5) + 32 ;
+}
+let celsius = document.querySelector("#cel");
+let fahrenhite = document.querySelector("#fa");
+
+celsius.addEventListener("click", showCelsius);
+fahrenhite.addEventListener("click", showFahenhite);
