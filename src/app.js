@@ -71,7 +71,7 @@ function showCelsius() {
 
 function showFahenhite() {
   let displayTemp = document.querySelector(".temp");
-  displayTemp.innerHTML = showCelsuis * 9.5 + 32;
+  displayTemp.innerHTML = showCelsuis * 9.5;
 }
 let celsius = document.querySelector("#cel");
 let fahrenhite = document.querySelector("#fa");
