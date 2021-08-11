@@ -34,7 +34,10 @@ function showDescribtion(response) {
   let displayTime = document.querySelector("#time");
   let displayIcon = document.querySelector("#icon");
 
-  displayIcon.setAttribute("src");
+  displayIcon.setAttribute(
+    "src",
+    "http://openweathermap.org/img/wn/${}@2x.png"
+  );
   displayTime.innerHTML = timezone(response.data.list[0].dt * 1000);
   displayHumidity.innerHTML = `${response.data.list[0].main.humidity} %`;
   displayWeatherDes.innerHTML = response.data.list[0].weather[0].description;
