@@ -34,7 +34,7 @@ function showDescribtion(response) {
   let displayHumidity = document.querySelector("#humidity");
   let displayTime = document.querySelector("#time");
   let displayIcon = document.querySelector("#icon");
-
+  showCelsuis = Math.round(response.data.list[0].main.temp - 273.15);
   displayIcon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.list[0].weather[0].icon}@2x.png`
@@ -61,3 +61,8 @@ function handleclick(event) {
 let showCelsuis = null;
 let submitCity = document.querySelector("form");
 submitCity.addEventListener("submit", handleclick);
+
+//unit conversion
+
+let celsius = document.querySelector(".temp");
+let fahrenhite = document.querySelector(".unit");
