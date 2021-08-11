@@ -64,12 +64,14 @@ submitCity.addEventListener("submit", handleclick);
 
 //unit conversion
 
-function showCelsius() {
+function showCelsius(event) {
+  event.preventDefault();
   let displayTemp = document.querySelector(".temp");
   displayTemp.innerHTML = showCelsuis;
 }
 
-function showFahenhite() {
+function showFahenhite(event) {
+  event.preventDefault();
   let displayTemp = document.querySelector(".temp");
   displayTemp.innerHTML = showCelsuis * 9.5;
 }
