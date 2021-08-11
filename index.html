@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- bootstrap container start-->
-    <div class="container col-4">
+    <div class="container">
       <!-- search box start  -->
       <div class="form">
         <form class="row g-1 mt-3">
@@ -43,15 +43,16 @@
           src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
           alt=""
         />
-        <h1 class="text-center">Tehran</h1>
-        <p class="text-center">22:00 friday</p>
+        <h1 class="text-center" id="city-name">Tehran</h1>
+        <p class="text-center" id="description"></p>
+        <p id="time" class="text-center">22:00 friday</p>
       </div>
       <!-- Weather and city end -->
       <!-- description start -->
       <div class="row text-center mt-3">
         <div class="col-4 mt-3">
           <p class="text-center">humidity</p>
-          <p>35</p>
+          <p id="humidity">35</p>
         </div>
         <div class="col-4 mt-3">
           <p>Temperature</p>
@@ -61,7 +62,7 @@
         </div>
         <div class="col-4 mt-3">
           <p class="text-center">wind</p>
-          <p>2km</p>
+          <p id="wind">2</p>
         </div>
       </div>
       <!-- description end -->
