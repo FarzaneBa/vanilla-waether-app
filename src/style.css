@@ -1,6 +1,7 @@
 .container {
   max-width: 600px;
   border: 1px solid #dadde1;
+  padding: 20px;
   margin-top: 50px;
   border-radius: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;

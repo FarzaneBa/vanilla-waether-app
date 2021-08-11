@@ -58,6 +58,6 @@ function handleclick(event) {
   console.log(apiUrl);
   axios.get(apiUrl).then(showDescribtion);
 }
-
+let showCelsuis = null;
 let submitCity = document.querySelector("form");
 submitCity.addEventListener("submit", handleclick);
