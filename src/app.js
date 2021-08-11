@@ -26,7 +26,7 @@ function timezone(time) {
 }
 // display weather description
 function showDescribtion(response) {
-  console.log(response.data.list[0].weather[0].icon);
+  console.log(response.data);
   let displayCityName = document.querySelector("#city-name");
   let displayTemp = document.querySelector(".temp");
   let displayWind = document.querySelector("#wind");
@@ -37,7 +37,7 @@ function showDescribtion(response) {
 
   displayIcon.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `http://openweathermap.org/img/wn/${response.data.list[0].weather[0].icon}@2x.png`
   );
   displayTime.innerHTML = timezone(response.data.list[0].dt * 1000);
   displayHumidity.innerHTML = `${response.data.list[0].main.humidity} %`;
