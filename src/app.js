@@ -10,7 +10,7 @@ function timezone(time) {
     "wednesday",
     "thusday",
     "friday",
-    "saturday"
+    "saturday",
   ];
   let day = days[date.getDay()];
 
@@ -26,14 +26,15 @@ function timezone(time) {
 }
 // display weather description
 function showDescribtion(response) {
-  console.log(response.data.list[0].dt);
   let displayCityName = document.querySelector("#city-name");
   let displayTemp = document.querySelector(".temp");
   let displayWind = document.querySelector("#wind");
   let displayWeatherDes = document.querySelector("#description");
   let displayHumidity = document.querySelector("#humidity");
   let displayTime = document.querySelector("#time");
+  let displayIcon = document.querySelector("#icon");
 
+  displayIcon.setAttribute("src");
   displayTime.innerHTML = timezone(response.data.list[0].dt * 1000);
   displayHumidity.innerHTML = `${response.data.list[0].main.humidity} %`;
   displayWeatherDes.innerHTML = response.data.list[0].weather[0].description;
@@ -46,9 +47,11 @@ function showDescribtion(response) {
 
 function handleclick(event) {
   event.preventDefault();
+  console.log(apiUrl);
   let city = document.querySelector("#city");
   let apiKey = `f9ecda2c689aa064746066d544f0c32b`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/find?q=${city.value}&appid=${apiKey}`;
+
   axios.get(apiUrl).then(showDescribtion);
 }
 
