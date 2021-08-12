@@ -66,12 +66,16 @@ submitCity.addEventListener("submit", handleclick);
 
 function showCelsius(event) {
   event.preventDefault();
+  celsius.classList.add("active");
+  fahrenhite.classList.remove("active");
   let displayTemp = document.querySelector(".temp");
   displayTemp.innerHTML = showCelsuis;
 }
 
 function showFahenhite(event) {
   event.preventDefault();
+  fahrenhite.classList.add("active");
+  celsius.classList.remove("active");
   let displayTemp = document.querySelector(".temp");
   displayTemp.innerHTML = (showCelsuis * 9) / 5 + 32;
 }
