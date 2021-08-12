@@ -26,7 +26,9 @@ p {
   font-size: 20px;
 }
 
-#cel {
+#cel,
+#fa,
+#github {
   color: #7296d3;
   text-decoration: none;
 }
