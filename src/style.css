@@ -26,6 +26,10 @@ p {
   font-size: 20px;
 }
 
+#city {
+  color: #7296d3;
+}
+
 #cel,
 #fa,
 #github {
