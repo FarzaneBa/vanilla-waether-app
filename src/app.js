@@ -26,7 +26,7 @@ function timezone(time) {
 }
 // display weather description
 function showDescribtion(response) {
-  console.log(response.data);
+  console.log(response.data.list[0].dt);
   let displayCityName = document.querySelector("#city-name");
   let displayTemp = document.querySelector(".temp");
   let displayWind = document.querySelector("#wind");
