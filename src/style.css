@@ -38,6 +38,11 @@ p {
   text-decoration: none;
 }
 
+#cel:active,
+#fa:active {
+  color: #b975a6;
+}
+
 .temp {
   color: #7296d3;
   font-size: 35px;
