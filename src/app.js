@@ -65,7 +65,7 @@ submitCity.addEventListener("submit", handleclick);
 //unit conversion
 
 function showCelsius(event) {
-  event.preventDefault();
+  // event.preventDefault();
   celsius.classList.add("active");
   fahrenhite.classList.remove("active");
   let displayTemp = document.querySelector(".temp");
@@ -73,11 +73,11 @@ function showCelsius(event) {
 }
 
 function showFahenhite(event) {
-  event.preventDefault();
+  // event.preventDefault();
   fahrenhite.classList.add("active");
   celsius.classList.remove("active");
   let displayTemp = document.querySelector(".temp");
-  displayTemp.innerHTML = (showCelsuis * 9) / 5 + 32;
+  displayTemp.innerHTML = Math.round((showCelsuis * 9) / 5 + 32);
 }
 let celsius = document.querySelector("#cel");
 let fahrenhite = document.querySelector("#fa");
