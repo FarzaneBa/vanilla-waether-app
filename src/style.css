@@ -26,7 +26,8 @@ p {
   font-size: 20px;
 }
 
-#city {
+#city,
+#city::placeholder {
   color: #7296d3;
 }
 
