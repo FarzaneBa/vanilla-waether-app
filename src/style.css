@@ -39,6 +39,8 @@ p {
 }
 
 #cel:active,
+#cel:visited,
+#fa:visited,
 #fa:active {
   color: #b975a6;
 }
