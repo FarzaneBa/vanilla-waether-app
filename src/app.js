@@ -4,13 +4,13 @@ function timezone(time) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let days = [
-    "monday",
-    "tuesday",
-    "wednesday",
-    "thusday",
-    "friday",
-    "saturday",
-    "sunday",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thusday",
+    "Friday",
+    "Saturday",
   ];
   let day = days[date.getDay()];
 
