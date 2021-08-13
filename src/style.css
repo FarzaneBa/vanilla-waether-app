@@ -33,7 +33,8 @@ p {
 
 #cel,
 #fa,
-#github {
+#github,
+.active:hover {
   color: #7296d3;
   text-decoration: none;
 }
