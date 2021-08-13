@@ -43,7 +43,7 @@ p {
   color: #b975a6;
 } */
 
-.active {
+.active:active {
   color: #b975a6;
 }
 .temp {
