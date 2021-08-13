@@ -33,17 +33,19 @@ p {
 
 #cel,
 #fa,
-#github,
-.active:hover {
+#github {
   color: #7296d3;
   text-decoration: none;
 }
 
-#cel:active,
+/* #cel:active,
 #fa:active {
   color: #b975a6;
-}
+} */
 
+.active:hover {
+  color: #b975a6;
+}
 .temp {
   color: #7296d3;
   font-size: 35px;
