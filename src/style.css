@@ -26,10 +26,6 @@ p {
   font-size: 20px;
 }
 
-.active {
-  color: #b975a6;
-}
-
 #city,
 #city::placeholder {
   color: #7296d3;
@@ -42,10 +38,10 @@ p {
   text-decoration: none;
 }
 
-/* #cel:active,
+#cel:active,
 #fa:active {
   color: #b975a6;
-} */
+}
 
 .temp {
   color: #7296d3;
