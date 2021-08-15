@@ -84,3 +84,5 @@ let fahrenhite = document.querySelector("#fa");
 
 celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
+
+//forcast
