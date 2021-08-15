@@ -91,7 +91,7 @@ let week = ["monday", "sunday", "friday"];
 week.forEach(function dispalyForcast(day) {
   let forcastElement = document.querySelector("#forcast");
   let addRowToForcast = ` <div class="weather-forcast row" id="forcast">`;
-  forcastElement.innerHTML =
+  forcastElement.innerHTML +=
     addRowToForcast +
     ` <div class="col-2 text-center">
           <h1 id="forcast-day">${day}</h1>
