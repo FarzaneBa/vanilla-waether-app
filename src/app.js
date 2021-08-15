@@ -88,7 +88,7 @@ fahrenhite.addEventListener("click", showFahenhite);
 //forcast
 function dispalyForcast() {
   let forcastElement = document.querySelector("#forcast");
-  forcastElement.innerHTML = 
+  forcastElement.innerHTML = "forcast";
 }
 
 dispalyForcast();
