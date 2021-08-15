@@ -47,7 +47,7 @@ p {
 }
 
 #forcast {
-  margin: 0 auto;
+  justify-content: center;
 }
 .temp {
   color: #7296d3;
