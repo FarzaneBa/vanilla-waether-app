@@ -86,20 +86,20 @@ celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
-
-let week = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thusday",
-  "Friday",
-  "Saturday",
-];
-week.forEach(function dispalyForcast(day) {
-  let forcastElement = document.querySelector("#forcast");
-  let forcastHtml = "";
-  forcastHtml = ` <div class="col-2 text-center">
+function dispalyForcast() {
+  let week = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thusday",
+    "Friday",
+    "Saturday",
+  ];
+  week.forEach(function (day) {
+    let forcastElement = document.querySelector("#forcast");
+    let forcastHtml = "";
+    forcastHtml = ` <div class="col-2 text-center">
           <h1 id="forcast-day">${day}</h1>
           <img
             src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
@@ -109,7 +109,7 @@ week.forEach(function dispalyForcast(day) {
           <span id="max-temp">12</span>
         </div>
       `;
-  forcastElement.innerHTML += forcastHtml;
-});
-
+    forcastElement.innerHTML += forcastHtml;
+  });
+}
 dispalyForcast();
