@@ -87,7 +87,15 @@ fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
 
-let week = ["monday", "sunday", "friday"];
+let week = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thusday",
+  "Friday",
+  "Saturday",
+];
 week.forEach(function dispalyForcast(day) {
   let forcastElement = document.querySelector("#forcast");
   forcastElement.innerHTML += ` <div class="col-2 text-center">
