@@ -90,10 +90,7 @@ fahrenhite.addEventListener("click", showFahenhite);
 let week = ["monday", "sunday", "friday"];
 week.forEach(function dispalyForcast(day) {
   let forcastElement = document.querySelector("#forcast");
-  let addRowToForcast = ` <div class="weather-forcast row"`;
-  forcastElement.innerHTML +=
-    addRowToForcast +
-    ` <div class="col-2 text-center">
+  forcastElement.innerHTML += ` <div class="col-2 text-center">
           <h1 id="forcast-day">${day}</h1>
           <img
             src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
@@ -102,7 +99,7 @@ week.forEach(function dispalyForcast(day) {
           <span id="min-temp">10</span>
           <span id="max-temp">12</span>
         </div>
-        </div>`;
+      `;
 });
 
 dispalyForcast();
