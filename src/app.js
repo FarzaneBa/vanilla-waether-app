@@ -86,9 +86,23 @@ celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
-function dispalyForcast() {
+
+let week = ["monday", "sunday", "friday"];
+week.forEach(function dispalyForcast(day) {
   let forcastElement = document.querySelector("#forcast");
-  forcastElement.innerHTML = "forcast";
-}
+  let addRowToForcast = ` <div class="weather-forcast row" id="forcast">`;
+  forcastElement.innerHTML =
+    addRowToForcast +
+    ` <div class="col-2 text-center">
+          <h1 id="forcast-day">${day}</h1>
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+            alt=""
+          />
+          <span id="min-temp">10</span>
+          <span id="max-temp">12</span>
+        </div>
+        </div>`;
+});
 
 dispalyForcast();
