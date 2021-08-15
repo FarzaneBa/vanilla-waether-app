@@ -98,7 +98,8 @@ let week = [
 ];
 week.forEach(function dispalyForcast(day) {
   let forcastElement = document.querySelector("#forcast");
-  let forcastHtml = ` <div class="col-2 text-center">
+  let forcastHtml = "";
+  forcastHtml = ` <div class="col-2 text-center">
           <h1 id="forcast-day">${day}</h1>
           <img
             src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
