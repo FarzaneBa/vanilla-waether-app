@@ -46,6 +46,9 @@ p {
   color: #b975a6;
 }
 
+#forcast {
+  margin: 0 auto;
+}
 .temp {
   color: #7296d3;
   font-size: 35px;
