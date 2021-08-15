@@ -90,7 +90,7 @@ fahrenhite.addEventListener("click", showFahenhite);
 let week = ["monday", "sunday", "friday"];
 week.forEach(function dispalyForcast(day) {
   let forcastElement = document.querySelector("#forcast");
-  let addRowToForcast = ` <div class="weather-forcast row" id="forcast">`;
+  let addRowToForcast = ` <div class="weather-forcast row"`;
   forcastElement.innerHTML +=
     addRowToForcast +
     ` <div class="col-2 text-center">
