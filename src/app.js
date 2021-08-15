@@ -86,3 +86,8 @@ celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
+function dispalyForcast() {
+  let forcastElement = document.querySelector("#forcast");
+}
+
+dispalyForcast();
