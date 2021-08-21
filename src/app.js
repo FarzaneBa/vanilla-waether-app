@@ -138,9 +138,8 @@ function dispalyForcast(response) {
             forcastDay.temp.max - 273.15
           )} °</span>
         </div>
-        </div>
       `;
-
+      forcastHtml = forcastHtml + `</div>`;
       forcastElement.innerHTML = forcastHtml;
     }
   });
