@@ -115,11 +115,13 @@ function dispalyForcast(response) {
     forcastHtml = ` <div class="col-2 text-center">
           <h1 id="forcast-day">${forcastDay.dt}</h1>
           <img
-            src="http://openweathermap.org/img/wn/${forcastDay.weather[0].icon}@2x.pn"
+            src="http://openweathermap.org/img/wn/${
+              forcastDay.weather[0].icon
+            }@2x.pn"
             alt=""
           />
-          <span id="min-temp">${forcastDay.temp.min} °C </span>
-          <span id="max-temp">${forcastDay.temp.max} °C</span>
+          <span id="min-temp">${Math.round(forcastDay.temp.min)} °C </span>
+          <span id="max-temp">${Math.round(forcastDay.temp.max)} °C</span>
         </div>
       `;
     forcastElement.innerHTML += forcastHtml;
