@@ -26,8 +26,16 @@ function timezone(time) {
 }
 
 //function for display forcast
+function showForcast(forcast) {
+  console.log(forcast);
+}
 function getForcast(coordinates) {
   console.log(coordinates);
+  let lat = coordinates.lat;
+  let lon = coordinates.lon;
+  let apiKey = `53647c12f67effb0b2c13aa8c1aa18af`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={daily}&appid=${apiKey}`;
+  axios.get(apiUrl).then(showForcast);
 }
 // display weather description
 function showDescribtion(response) {
