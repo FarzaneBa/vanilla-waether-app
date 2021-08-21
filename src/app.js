@@ -112,10 +112,9 @@ function dispalyForcast(response) {
   console.log(response.data.daily);
   let forcast = response.data.daily;
   let forcastElement = document.querySelector("#forcast");
-  let forcastHtml = "";
+  forcastHtml = `<div class="row">`;
   forcast.forEach(function (forcastDay, index) {
     if (index < 4) {
-      forcastHtml = `<div class="row">`;
       forcastHtml += ` <div class="col-3 text-center" >
           <h1 id="forcast-day">${formatDate(forcastDay.dt)}</h1>
           <img
