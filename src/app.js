@@ -120,8 +120,12 @@ function dispalyForcast(response) {
             }@2x.png"
             alt=""
           />
-          <span id="min-temp">${Math.round(forcastDay.temp.min)} °C </span>
-          <span id="max-temp">${Math.round(forcastDay.temp.max)} °C</span>
+          <span id="min-temp">${Math.round(
+            forcastDay.temp.min - 273.15
+          )} °C </span>
+          <span id="max-temp">${Math.round(
+            forcastDay.temp.max - 273.15
+          )} °C</span>
         </div>
       `;
     forcastElement.innerHTML += forcastHtml;
