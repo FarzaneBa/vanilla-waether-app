@@ -28,12 +28,10 @@ function timezone(time) {
 //function for display forcast
 
 function getForcast(coordinates) {
-  console.log(coordinates);
   let lat = coordinates.lat;
   let lon = coordinates.lon;
   let apiKey = `53647c12f67effb0b2c13aa8c1aa18af`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&&exclude=daily&appid=${apiKey}`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(dispalyForcast);
 }
 // display weather description
@@ -99,8 +97,8 @@ celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
-function dispalyForcast(coordinates) {
-  console.log(coordinates);
+function dispalyForcast(response) {
+  console.log(response.data);
   let week = [
     "Sunday",
     "Monday",
