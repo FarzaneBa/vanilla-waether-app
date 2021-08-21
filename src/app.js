@@ -118,8 +118,8 @@ function dispalyForcast(response) {
             src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
             alt=""
           />
-          <span id="min-temp">10</span>
-          <span id="max-temp">12</span>
+          <span id="min-temp">${forcastDay.temp.min} °C </span>
+          <span id="max-temp">${forcastDay.temp.max} °C</span>
         </div>
       `;
     forcastElement.innerHTML += forcastHtml;
