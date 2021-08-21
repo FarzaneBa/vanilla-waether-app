@@ -98,21 +98,21 @@ fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
 function dispalyForcast(response) {
-  console.log(response.data.daily);
-  let week = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thusday",
-    "Friday",
-    "Saturday",
-  ];
-  week.forEach(function (day) {
+  let forcast = response.data.daily;
+  // let week = [
+  //   "Sunday",
+  //   "Monday",
+  //   "Tuesday",
+  //   "Wednesday",
+  //   "Thusday",
+  //   "Friday",
+  //   "Saturday",
+  // ];
+  forcast.forEach(function (forcastDay) {
     let forcastElement = document.querySelector("#forcast");
     let forcastHtml = "";
     forcastHtml = ` <div class="col-2 text-center">
-          <h1 id="forcast-day">${day}</h1>
+          <h1 id="forcast-day">${forcastDay.dt}</h1>
           <img
             src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
             alt=""
