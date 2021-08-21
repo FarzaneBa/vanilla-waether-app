@@ -125,7 +125,7 @@ function dispalyForcast(response) {
   forcast.forEach(function (forcastDay, index) {
     let forcastElement = document.querySelector("#forcast");
     let forcastHtml = "";
-    forcastHtml = ` <div class="col-2 text-center">
+    forcastHtml += ` <div class="col-2 text-center">
           <h1 id="forcast-day">${formatDate(forcastDay.dt)}</h1>
           <img
             src="http://openweathermap.org/img/wn/${
@@ -141,9 +141,8 @@ function dispalyForcast(response) {
           )} °C</span>
         </div>
       `;
-    if (index < 5) {
-      forcastElement.innerHTML += forcastHtml;
-    }
+
+    forcastElement.innerHTML = forcastHtml;
   });
 }
 dispalyForcast();
