@@ -53,7 +53,7 @@ function showDescribtion(response) {
   displayTemp.innerHTML = Math.round(response.data.list[0].main.temp - 273.15);
   displayCityName.innerHTML = response.data.list[0].name;
 
-  getForcast(response.data.coords);
+  getForcast(response.data.list[0].coord);
 }
 
 function handleclick(event) {
