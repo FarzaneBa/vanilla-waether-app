@@ -97,6 +97,20 @@ celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
+function formatDate(time) {
+  let date = new Date(time);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thusday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return day;
+}
 function dispalyForcast(response) {
   let forcast = response.data.daily;
   // let week = [
@@ -113,7 +127,7 @@ function dispalyForcast(response) {
     let forcastElement = document.querySelector("#forcast");
     let forcastHtml = "";
     forcastHtml = ` <div class="col-2 text-center">
-          <h1 id="forcast-day">${forcastDay.dt}</h1>
+          <h1 id="forcast-day">${formatDate(forcastDay.dt)}</h1>
           <img
             src="http://openweathermap.org/img/wn/${
               forcastDay.weather[0].icon
