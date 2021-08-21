@@ -26,6 +26,7 @@ function timezone(time) {
 }
 
 //function for display forcast
+
 function getForcast(coordinates) {
   console.log(coordinates);
   let lat = coordinates.lat;
@@ -37,7 +38,6 @@ function getForcast(coordinates) {
 }
 // display weather description
 function showDescribtion(response) {
-  console.log(response.data);
   let displayCityName = document.querySelector("#city-name");
   let displayTemp = document.querySelector(".temp");
   let displayWind = document.querySelector("#wind");
@@ -99,7 +99,8 @@ celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
-function dispalyForcast() {
+function dispalyForcast(coordinates) {
+  console.log(coordinates);
   let week = [
     "Sunday",
     "Monday",
