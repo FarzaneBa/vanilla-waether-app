@@ -50,7 +50,9 @@ p {
   justify-content: center;
 }
 
-#min-temp,
+#min-temp {
+  color: #7296d3;
+}
 #max-temp {
   color: #b975a6;
 }
