@@ -24,6 +24,11 @@ function timezone(time) {
 
   return `${day} ${hours}:${minutes}`;
 }
+
+//function for display forcast
+function getForcast(coordinates) {
+  console.log(coordinates);
+}
 // display weather description
 function showDescribtion(response) {
   console.log(response.data);
@@ -47,6 +52,8 @@ function showDescribtion(response) {
   )} Km/h`;
   displayTemp.innerHTML = Math.round(response.data.list[0].main.temp - 273.15);
   displayCityName.innerHTML = response.data.list[0].name;
+
+  getForcast(response.data.coords);
 }
 
 function handleclick(event) {
