@@ -119,9 +119,9 @@ function dispalyForcast(response) {
   //   "Friday",
   //   "Saturday",
   // ];
+  let forcastElement = document.querySelector("#forcast");
   forcast.forEach(function (forcastDay, index) {
     if (index < 4) {
-      let forcastElement = document.querySelector("#forcast");
       let forcastHtml = `<div class="row">`;
       forcastHtml += ` <div class="col-2 text-center" >
           <h1 id="forcast-day">${formatDate(forcastDay.dt)}</h1>
