@@ -139,4 +139,4 @@ function dispalyForcast(response) {
   forcastHtml = forcastHtml + `</div>`;
   forcastElement.innerHTML = forcastHtml;
 }
-dispalyForcast();
+// dispalyForcast();
