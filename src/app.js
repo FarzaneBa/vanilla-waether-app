@@ -26,35 +26,6 @@ function timezone(time) {
 }
 
 //function for display forcast
-function dispalyForcast(response) {
-  console.log(response.data.daily);
-  let week = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thusday",
-    "Friday",
-    "Saturday",
-  ];
-  week.forEach(function (day) {
-    let forcastElement = document.querySelector("#forcast");
-    let forcastHtml = "";
-    forcastHtml = ` <div class="col-2 text-center">
-          <h1 id="forcast-day">${day}</h1>
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-            alt=""
-          />
-          <span id="min-temp">10</span>
-          <span id="max-temp">12</span>
-        </div>
-      `;
-    forcastElement.innerHTML += forcastHtml;
-  });
-}
-dispalyForcast();
-
 function getForcast(coordinates) {
   let lat = coordinates.lat;
   let lon = coordinates.lon;
@@ -124,3 +95,33 @@ let fahrenhite = document.querySelector("#fa");
 
 celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
+
+//forcast
+function dispalyForcast(response) {
+  console.log(response.data.daily);
+  let week = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thusday",
+    "Friday",
+    "Saturday",
+  ];
+  week.forEach(function (day) {
+    let forcastElement = document.querySelector("#forcast");
+    let forcastHtml = "";
+    forcastHtml = ` <div class="col-2 text-center">
+          <h1 id="forcast-day">${day}</h1>
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+            alt=""
+          />
+          <span id="min-temp">10</span>
+          <span id="max-temp">12</span>
+        </div>
+      `;
+    forcastElement.innerHTML += forcastHtml;
+  });
+}
+dispalyForcast();
