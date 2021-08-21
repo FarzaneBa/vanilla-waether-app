@@ -115,7 +115,7 @@ function dispalyForcast(response) {
     forcastHtml = ` <div class="col-2 text-center">
           <h1 id="forcast-day">${forcastDay.dt}</h1>
           <img
-            src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+            src="http://openweathermap.org/img/wn/${forcastDay.weather[0].icon}@2x.pn"
             alt=""
           />
           <span id="min-temp">${forcastDay.temp.min} °C </span>
