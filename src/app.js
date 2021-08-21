@@ -109,6 +109,7 @@ function dispalyForcast(response) {
   //   "Saturday",
   // ];
   forcast.forEach(function (forcastDay) {
+    console.log(forcastDay.dt);
     let forcastElement = document.querySelector("#forcast");
     let forcastHtml = "";
     forcastHtml = ` <div class="col-2 text-center">
