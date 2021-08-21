@@ -111,6 +111,7 @@ function formatDate(time) {
   return day;
 }
 function dispalyForcast(response) {
+  response.preventDefault();
   let forcast = response.data.daily;
   // let week = [
   //   "Sunday",
