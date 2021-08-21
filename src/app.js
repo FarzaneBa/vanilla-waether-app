@@ -116,9 +116,7 @@ function dispalyForcast(response) {
   forcast.forEach(function (forcastDay, index) {
     if (index < 4) {
       forcastHtml = `<div class="row">`;
-      forcastHtml =
-        forcastHtml +
-        ` <div class="col-3 text-center" >
+      forcastHtml += ` <div class="col-3 text-center" >
           <h1 id="forcast-day">${formatDate(forcastDay.dt)}</h1>
           <img
             src="https://openweathermap.org/img/wn/${
