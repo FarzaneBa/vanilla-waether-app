@@ -122,8 +122,8 @@ function dispalyForcast(response) {
   forcast.forEach(function (forcastDay, index) {
     if (index < 4) {
       let forcastElement = document.querySelector("#forcast");
-      let forcastHtml = "";
-      forcastHtml = ` <div class="col-2 text-center" >
+      let forcastHtml = `<div class="row">`;
+      forcastHtml += ` <div class="col-2 text-center" >
           <h1 id="forcast-day">${formatDate(forcastDay.dt)}</h1>
           <img
             src="http://openweathermap.org/img/wn/${
@@ -138,9 +138,10 @@ function dispalyForcast(response) {
             forcastDay.temp.max - 273.15
           )} °</span>
         </div>
+        </div>
       `;
 
-      forcastElement.innerHTML += forcastHtml;
+      forcastElement.innerHTML = forcastHtml;
     }
   });
 }
