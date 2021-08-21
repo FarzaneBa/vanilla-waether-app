@@ -26,6 +26,19 @@ p {
   font-size: 20px;
 }
 
+.forcastBlock {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+
+.forcastBlock:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 #forcast-day {
   font-size: 18px;
 }
