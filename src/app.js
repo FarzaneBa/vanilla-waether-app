@@ -27,7 +27,7 @@ function timezone(time) {
 
 //function for display forcast
 function dispalyForcast(response) {
-  console.log(response);
+  console.log(response.data.daily);
   let week = [
     "Sunday",
     "Monday",
