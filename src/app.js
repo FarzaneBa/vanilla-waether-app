@@ -31,7 +31,6 @@ function getForcast(coordinates) {
   let lon = coordinates.lon;
   let apiKey = `53647c12f67effb0b2c13aa8c1aa18af`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(dispalyForcast);
 }
 // display weather description
