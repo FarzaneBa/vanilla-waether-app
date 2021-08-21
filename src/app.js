@@ -111,9 +111,10 @@ function formatDate(time) {
 function dispalyForcast(response) {
   let forcast = response.data.daily;
   let forcastElement = document.querySelector("#forcast");
+  let forcastHtml = "";
   forcast.forEach(function (forcastDay, index) {
     if (index < 4) {
-      let forcastHtml = `<div class="row">`;
+      forcastHtml = `<div class="row">`;
       forcastHtml += ` <div class="col-2 text-center" >
           <h1 id="forcast-day">${formatDate(forcastDay.dt)}</h1>
           <img
