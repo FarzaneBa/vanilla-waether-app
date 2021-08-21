@@ -98,7 +98,7 @@ fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
 function dispalyForcast(response) {
-  console.log(response.data);
+  console.log(response.data.list[0]);
   let week = [
     "Sunday",
     "Monday",
