@@ -121,7 +121,7 @@ function dispalyForcast(response) {
         ` <div class="col-3 text-center" >
           <h1 id="forcast-day">${formatDate(forcastDay.dt)}</h1>
           <img
-            src="http://openweathermap.org/img/wn/${
+            src="https://openweathermap.org/img/wn/${
               forcastDay.weather[0].icon
             }@2x.png"
             alt=""
