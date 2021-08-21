@@ -109,7 +109,7 @@ function formatDate(time) {
   return day;
 }
 function dispalyForcast(response) {
-  console.log(response);
+  console.log(response.data.daily);
   let forcast = response.data.daily;
   let forcastElement = document.querySelector("#forcast");
   let forcastHtml = "";
