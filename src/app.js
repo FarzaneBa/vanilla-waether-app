@@ -139,9 +139,9 @@ function dispalyForcast(response) {
           )} °</span>
         </div>
       `;
-      forcastHtml = forcastHtml + `</div>`;
-      forcastElement.innerHTML = forcastHtml;
     }
+    forcastHtml = forcastHtml + `</div>`;
+    forcastElement.innerHTML = forcastHtml;
   });
 }
 dispalyForcast();
