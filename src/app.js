@@ -135,10 +135,10 @@ function dispalyForcast(response) {
           />
           <span id="min-temp">${Math.round(
             forcastDay.temp.min - 273.15
-          )} °C </span>
+          )} °</span>
           <span id="max-temp">${Math.round(
             forcastDay.temp.max - 273.15
-          )} °C</span>
+          )} °</span>
         </div>
       `;
 
