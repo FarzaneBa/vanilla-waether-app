@@ -49,6 +49,11 @@ p {
 #forcast {
   justify-content: center;
 }
+
+#min-temp,
+#max-temp {
+  color: #b975a6;
+}
 .temp {
   color: #7296d3;
   font-size: 35px;

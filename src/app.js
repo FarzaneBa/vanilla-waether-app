@@ -123,7 +123,7 @@ function dispalyForcast(response) {
   //   "Saturday",
   // ];
   forcast.forEach(function (forcastDay, index) {
-    if (index < 5) {
+    if (index < 4) {
       let forcastElement = document.querySelector("#forcast");
       let forcastHtml = "";
       forcastHtml = ` <div class="col-2 text-center">
