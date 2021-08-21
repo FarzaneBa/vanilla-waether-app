@@ -117,7 +117,7 @@ function dispalyForcast(response) {
           <img
             src="http://openweathermap.org/img/wn/${
               forcastDay.weather[0].icon
-            }@2x.pn"
+            }@2x.png"
             alt=""
           />
           <span id="min-temp">${Math.round(forcastDay.temp.min)} °C </span>
