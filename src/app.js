@@ -66,7 +66,7 @@ function handleclick(event) {
   let city = document.querySelector("#city");
   let apiKey = `f9ecda2c689aa064746066d544f0c32b`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/find?q=${city.value}&appid=${apiKey}`;
-  console.log(apiUrl);
+
   axios.get(apiUrl).then(showDescribtion);
 }
 let showCelsuis = null;
@@ -98,7 +98,7 @@ fahrenhite.addEventListener("click", showFahenhite);
 
 //forcast
 function dispalyForcast(response) {
-  console.log(response.data.list[0]);
+  console.log(response.data);
   let week = [
     "Sunday",
     "Monday",
