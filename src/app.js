@@ -50,9 +50,7 @@ function showDescribtion(response) {
   displayTime.innerHTML = timezone(response.data.list[0].dt * 1000);
   displayHumidity.innerHTML = `${response.data.list[0].main.humidity} %`;
   displayWeatherDes.innerHTML = response.data.list[0].weather[0].description;
-  displayWind.innerHTML = `${Math.round(
-    response.data.list[0].wind.speed
-  )} Km/h`;
+  displayWind.innerHTML = `${Math.round(response.data.list[0].wind.speed)} m/h`;
   displayTemp.innerHTML = Math.round(response.data.list[0].main.temp - 273.15);
   displayCityName.innerHTML = response.data.list[0].name;
 
