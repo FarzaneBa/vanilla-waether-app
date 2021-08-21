@@ -26,12 +26,41 @@ function timezone(time) {
 }
 
 //function for display forcast
+function dispalyForcast(response) {
+  console.log(response.data);
+  let week = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thusday",
+    "Friday",
+    "Saturday",
+  ];
+  week.forEach(function (day) {
+    let forcastElement = document.querySelector("#forcast");
+    let forcastHtml = "";
+    forcastHtml = ` <div class="col-2 text-center">
+          <h1 id="forcast-day">${day}</h1>
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+            alt=""
+          />
+          <span id="min-temp">10</span>
+          <span id="max-temp">12</span>
+        </div>
+      `;
+    forcastElement.innerHTML += forcastHtml;
+  });
+}
+dispalyForcast();
 
 function getForcast(coordinates) {
   let lat = coordinates.lat;
   let lon = coordinates.lon;
   let apiKey = `53647c12f67effb0b2c13aa8c1aa18af`;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&&exclude=daily&appid=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=daily&appid=${apiKey}`;
+  console.log(apiUrl);
   axios.get(apiUrl).then(dispalyForcast);
 }
 // display weather description
@@ -95,33 +124,3 @@ let fahrenhite = document.querySelector("#fa");
 
 celsius.addEventListener("click", showCelsius);
 fahrenhite.addEventListener("click", showFahenhite);
-
-//forcast
-function dispalyForcast(response) {
-  console.log(response.data);
-  let week = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thusday",
-    "Friday",
-    "Saturday",
-  ];
-  week.forEach(function (day) {
-    let forcastElement = document.querySelector("#forcast");
-    let forcastHtml = "";
-    forcastHtml = ` <div class="col-2 text-center">
-          <h1 id="forcast-day">${day}</h1>
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-            alt=""
-          />
-          <span id="min-temp">10</span>
-          <span id="max-temp">12</span>
-        </div>
-      `;
-    forcastElement.innerHTML += forcastHtml;
-  });
-}
-dispalyForcast();
