@@ -110,15 +110,6 @@ function formatDate(time) {
 }
 function dispalyForcast(response) {
   let forcast = response.data.daily;
-  // let week = [
-  //   "Sunday",
-  //   "Monday",
-  //   "Tuesday",
-  //   "Wednesday",
-  //   "Thusday",
-  //   "Friday",
-  //   "Saturday",
-  // ];
   let forcastElement = document.querySelector("#forcast");
   forcast.forEach(function (forcastDay, index) {
     if (index < 4) {
@@ -140,8 +131,8 @@ function dispalyForcast(response) {
         </div>
       `;
     }
-    forcastHtml = forcastHtml + `</div>`;
-    forcastElement.innerHTML = forcastHtml;
   });
+  forcastHtml = forcastHtml + `</div>`;
+  forcastElement.innerHTML = forcastHtml;
 }
 dispalyForcast();
